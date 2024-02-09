@@ -1,5 +1,5 @@
 package se.yrgo;
-
+/*Class representing a product*/
 public class Product {
     private String productId;
     private String name;
@@ -14,6 +14,7 @@ public class Product {
         this.quantity = quantity;
     }
 
+    /*Method for calculating the cost of a product*/
     public double calculateCost() {
         return price * quantity;
     }
