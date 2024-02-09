@@ -33,6 +33,4 @@ public class ProductTest {
         double result = p1.calculateCost();
         assertEquals(0, result);
     }
-
-
 }
