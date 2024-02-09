@@ -6,6 +6,6 @@ public class ShopMain {
 
     public static void main(String[] args) {
         Product product1 = new Product("23", "Bolt", 23.99, 3);
-        System.out.println(product1);
+        System.out.println(product1.calculateCost());
     }
 }
