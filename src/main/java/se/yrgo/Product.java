@@ -14,10 +14,8 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public double calculateCost(double price, int quantity) {
-        double cost;
-        cost = price * quantity;
-        return cost;
+    public double calculateCost() {
+        return price * quantity;
     }
 
     public String getProductId() {
