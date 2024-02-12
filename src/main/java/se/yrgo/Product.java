@@ -41,6 +41,6 @@ public class Product {
                 "ID: " + productId + "\n" +
                 "Name: " + name + "\n" +
                 "Price: " + price +  "\n" +
-                "Quantity: " + quantity;
+                "Quantity: " + quantity + "\n";
     }
 }
