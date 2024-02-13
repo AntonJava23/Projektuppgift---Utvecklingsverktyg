@@ -37,7 +37,9 @@ public class ShoppingCart {
         }
         return null;
     }
-
+    public List<Product> getProducts() {
+        return new ArrayList<>(products);
+    }
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
