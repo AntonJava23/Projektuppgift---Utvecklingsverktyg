@@ -7,6 +7,13 @@ public class Product {
     private int quantity;
 
 
+    /**
+     *
+     * @param productId // The ID of the product
+     * @param name // The products name
+     * @param price // The price of the product
+     * @param quantity // The quantity of the product
+     */
     public Product(String productId, String name, double price, int quantity) {
         this.productId = productId;
         this.name = name;
