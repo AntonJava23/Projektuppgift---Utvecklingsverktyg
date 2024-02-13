@@ -33,4 +33,14 @@ public class ShoppingCartTest {
         assertEquals(2, cart.calculateCost());
     }
 
+    @Test
+    public void testSeeCartContent () {
+        String expectedString = "Product\n" +
+                "ID: \n" +
+                "Name: \n" +
+                "Price: 1.0\n" +
+                "Quantity: 1\n";
+        assertEquals(expectedString, cart.toString());
+    }
+
 }
