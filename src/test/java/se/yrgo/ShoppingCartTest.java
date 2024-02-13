@@ -12,7 +12,7 @@ public class ShoppingCartTest {
 
     public ShoppingCartTest() {
         cart = new ShoppingCart();
-        product = new Product("", "", 1, 0);
+        product = new Product("", "", 1, 1);
         cart.addProduct(product);
     }
 

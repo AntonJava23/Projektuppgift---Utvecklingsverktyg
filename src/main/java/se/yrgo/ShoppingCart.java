@@ -15,7 +15,7 @@ public class ShoppingCart {
     public double calculateCost() {
         double cost = 0;
         for (Product product : products) {
-            cost+=product.getPrice();
+            cost+=product.calculateCost();
         }
 
         return cost;
