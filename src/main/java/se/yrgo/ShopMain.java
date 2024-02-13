@@ -14,6 +14,5 @@ public class ShopMain {
         System.out.println("Cost: " + product1.calculateCost() + "\n");
         System.out.println(cart);
         System.out.println("Cost: " + cart.calculateCost());
-
     }
 }
