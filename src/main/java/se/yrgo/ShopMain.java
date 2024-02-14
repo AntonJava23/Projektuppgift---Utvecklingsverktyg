@@ -16,7 +16,6 @@ public class ShopMain {
         ShoppingCart cart2 = new ShoppingCart();
         ShoppingCart cart3 = new ShoppingCart();
 
-
         cart.addProduct(product1);
         cart.addProduct(product2);
         cart2.addProduct(product1);
@@ -30,8 +29,5 @@ public class ShopMain {
         cart3.addProduct(product2);
         c1.placeOrder(cart3);
         c1.viewOrderHistory();
-
     }
-
-
 }

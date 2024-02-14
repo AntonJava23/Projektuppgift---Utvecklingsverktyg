@@ -51,8 +51,6 @@ public class Customer {
         return orderHistory;
     }
 
-
-
     @Override
     public String toString() {
         return "Customer ID: " + customerId +
