@@ -4,6 +4,7 @@ package se.yrgo;
 
 public class ShopMain {
 
+    // Main method to print out a product and test if classes work.
     public static void main(String[] args) {
         Customer c1 = new Customer(1, "Nahid", "nahid@gmail.com");
         Customer c2 = new Customer(2, "Hampus", "Hampus@gmail.com");
