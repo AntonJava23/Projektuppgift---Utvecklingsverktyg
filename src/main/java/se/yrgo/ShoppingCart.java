@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * This class represents a shopping cart. It consists of a list of products
  * and its functions lets you calculate the total cost of the products,
- * add & remove a product, and return the content of the shopping cart.
+ * add and remove a product, and return the content of the shopping cart.
  * */
 public class ShoppingCart {
 
