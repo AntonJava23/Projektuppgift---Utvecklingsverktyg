@@ -1,10 +1,13 @@
 package se.yrgo;
 
 
-
+/**
+ * This class creates customers, products and shopping carts.
+ * It tests to see if carts adds the desired products, if its contents are seen,
+ * and if you can follow an order history with different orders.
+ * */
 public class ShopMain {
 
-    // Main method to print out a product and test if classes work.
     public static void main(String[] args) {
         Customer c1 = new Customer(1, "Nahid", "nahid@gmail.com");
         Customer c2 = new Customer(2, "Hampus", "Hampus@gmail.com");
@@ -19,13 +22,13 @@ public class ShopMain {
         cart.addProduct(product1);
         cart.addProduct(product2);
         cart2.addProduct(product1);
-        //nahid lägger en order
+        //Nahid places an order
         c1.placeOrder(cart);
         c1.viewOrderHistory();
-        //hampus lägger en order
+        //Hampus places an order
         c2.placeOrder(cart2);
         c2.viewOrderHistory();
-        //nahid lägger sin andra order
+        //Nahid places her second order
         cart3.addProduct(product2);
         c1.placeOrder(cart3);
         c1.viewOrderHistory();

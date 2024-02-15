@@ -2,8 +2,7 @@ package se.yrgo;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ShoppingCartTest {
 
@@ -23,6 +22,9 @@ public class ShoppingCartTest {
 
     @Test
     public void testRemoveProduct() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            cart.removeProduct("Non existing productId");
+        });
         cart.removeProduct(product.getProductId());
         assertNull(cart.getProduct(product.getProductId()));
     }
@@ -42,5 +44,4 @@ public class ShoppingCartTest {
                 "Quantity: 1\n";
         assertEquals(expectedString, cart.toString());
     }
-
 }
