@@ -12,16 +12,25 @@ public class Customer {
     private int customerId;
     private String name;
     private String email;
-
     private List<ShoppingCart> orderHistory;
-
+    /**
+     *
+     * @param customerId identifier for the customer
+     * @param name name of the customer
+     * @param email email address of the customer
+     */
     public Customer(int customerId, String name, String email) {
         this.customerId = customerId;
         this.name = name;
         this.email = email;
         this.orderHistory = new ArrayList<>();
     }
-
+    /**
+     * places an order using the shopping cart
+     * creates a new order with the products in the shopping cart and adds it to the order history
+     *
+     * @param shoppingCart the shopping cart with products to be ordered
+     */
     public void placeOrder(ShoppingCart shoppingCart) {
         ShoppingCart newOrder = new ShoppingCart();
 
@@ -33,9 +42,11 @@ public class Customer {
 
         orderHistory.add(newOrder);
     }
-
+    /**
+     * prints a formatted string representing the order history of the customer
+     * it includes customer info, product info and total cost.
+     */
     public String viewOrderHistory() {
-
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < orderHistory.size(); i++) {
@@ -54,10 +65,4 @@ public class Customer {
         return orderHistory;
     }
 
-    @Override
-    public String toString() {
-        return "Customer ID: " + customerId +
-                "\nName: " + name +
-                "\nEmail: " + email;
-    }
 }
