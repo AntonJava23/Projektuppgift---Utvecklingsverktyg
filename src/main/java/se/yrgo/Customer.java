@@ -3,6 +3,11 @@ package se.yrgo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class represents a Customer. It consists of a customer ID, customer name
+ * and customer email.
+ * The class' functions lets you place an order and view order history.
+ * */
 public class Customer {
     private int customerId;
     private String name;
@@ -18,7 +23,6 @@ public class Customer {
     }
 
     public void placeOrder(ShoppingCart shoppingCart) {
-        int orderCount = 1;
         ShoppingCart newOrder = new ShoppingCart();
 
         for (Product product : shoppingCart.getProducts()) {
@@ -28,7 +32,6 @@ public class Customer {
         }
 
         orderHistory.add(newOrder);
-        orderCount++;
     }
 
     public String viewOrderHistory() {
